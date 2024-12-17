@@ -24,7 +24,8 @@ func GetDB() *sql.DB {
 				username VARCHAR(32) PRIMARY KEY,
 				name VARCHAR(64),
 				email VARCHAR(64) NOT NULL UNIQUE,
-				password VARCHAR(64) NOT NULL
+				password VARCHAR(64) NOT NULL,
+				photo VARCHAR(64)
 			)
 			`)
 

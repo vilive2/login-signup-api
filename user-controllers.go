@@ -88,6 +88,8 @@ func register(w http.ResponseWriter, r *http.Request) {
 }
 
 func profile(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	if r.Method == http.MethodGet {
 
 		username := r.URL.Query().Get("username")
